@@ -22,11 +22,11 @@ Yoga Studio is a Premium PSD Template for Yoga, Fitness, Gym Center or Health Cl
 * Icons: FontAwesome
 
 
-# Documentation
+## Documentation
 You can find a guide of how to use this template and how you can modify that easily under Documentation folder.
 
-# Source Files
+## Source Files
 I have inclouded all the source files such as Ai and PSD files under SourceFiles. You may find them helpful. 
 
-# Contact Me
+## Keep in touch
 if you need any issues or problems regarding to work with this template or you want me to customize it for you please reach me out under issue tabs here. 
