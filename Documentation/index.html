@@ -1,0 +1,515 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>YogaStudio - RCHTHEME</title>
+	
+	<meta name="description" content="Responsive HTML5 Template">
+	<meta name="author" content="rchtheme">
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/css/shDocumenter.css" media="all">
+	<script src="assets/js/jquery.js"></script>	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	<script src="assets/js/shCore.js"></script>
+	<script src="assets/js/shBrushPhp.js"></script>
+	<script src="assets/js/shBrushJScript.js"></script>
+	<script src="assets/js/shBrushXml.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#386090;color:#fff;}
+		::selection{background:#386090;color:#fff;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#386090;}
+		#documenter_sidebar a{color:rgb(241, 190, 6);}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#386090;color:rgb(241, 190, 6);}
+		#documenter_sidebar ul{border-top:1px solid #fff;}
+		#documenter_sidebar ul a{border-top:1px solid #fff;color:#fff; font-weight: normal;}
+		#documenter_sidebar ul a:hover{background:rgb(241, 190, 6);color:#386090;border-top:1px solid rgb(241, 190, 6);}
+		#documenter_sidebar ul a.current{background:rgb(241, 190, 6);color:#386090;border-top:1px solid rgb(241, 190, 6);}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-itemname">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"><img src="assets/img/logo1x.png" width="200" alt="logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>	
+			<li><a href="#file_structure" title="Files Structure">Files Structure</a></li>
+			<li><a href="#html_structure" title="HTML Structure">HTML Structure</a></li>
+			<li><a href="#css_structure" title="CSS Structure">CSS Structure</a></li>
+			<li><a href="#javascript" title="Javascript">Javascript</a></li>
+			<li><a href="#change_color" title="Javascript">Colors</a></li>
+			<li><a href="#fonts" title="Fonts">Fonts</a></li>
+			<li><a href="#fonts_Yoga" title="Yoga Icons">Yoga Icons</a></li>
+			<li><a href="#widgets" title="Price Table">Widgets/Shortcodes</a></li>
+			<li><a href="#php_scripts" title="Php Scripts">Php Scripts</a></li>
+			<li><a href="#social_icons" title="Social Icons">Social Icons</a></li>
+			<li><a href="#change_log" title="Change Log">Change Log</a></li>
+			<li><a href="#source_Credits" title="Sources & Credits">Sources & Credits</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright RCHTHEME 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Yoga Studio</h1>
+	<h2>Responsive HTML5 Template</h2>
+	<hr>
+	<ul>
+	<li>created: 12/26/2014</li>
+	<li>latest update: 12/26/2014</li>
+	<li>by: RCHTHEME</li>
+	
+	<li>email: <a href="mailto:mj@rchtheme.com">mj@rchtheme.com</a></li>
+	</ul>
+	<p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email us.</p>
+	</section>
+	
+	<section id="file_structure">
+		<div class="page-header"><h3>File Structure</h3><hr class="notop"></div>
+        <pre>
+            - assets/css     (Template CSS)
+            - assets/ico     (Favicon and apple touch icon)
+            - assets/img     (All Images)
+            - assets/js      (Template JS)
+            - assets/fonts   (Yoga fonts files)
+            - assets/plugins (All external libs. We keep all of them in this folder to make updates easily.)
+        </pre>
+        <p>&nbsp;</p>
+	</section>
+
+
+	<section id="html_structure">
+		<div class="page-header"><h3>HTML Structure</h3><hr class="notop"></div>
+        <p>The template is based on <strong>Bootstrap </strong>Framework - <a href="http://getbootstrap.com/">http://getbootstrap.com/</a><br>
+            The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a <strong>1170px </strong>wide depending on your viewport.<br>
+            Below 480px viewports, the columns become fluid and stack vertically.
+        </p>
+        <p>Create a .row and add the appropriate number of .col-sm-* columns.</p>
+        <h4>HTML Markup</h4>
+        <pre class="brush: html">
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-12&quot;&gt;
+                Level 1 column
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;Level 2&lt;/div&gt;
+                    &lt;div class=&quot;col-sm-6&quot;&gt;Level 2&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        </pre>
+        <p>If you need more information, please visit this site: <a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a></p>
+        <p>&nbsp;</p>
+	</section>
+
+
+	<section id="css_structure">
+		<div class="page-header"><h3>Css Structure</h3><hr class="notop"></div>
+       <p>The organization of the CSS is one of our priorities.<br>
+            These are the CSS file we&#39;re using in the template:
+        </p>
+        <pre>
+        - assets
+            - css
+                - theme.css      - (Main CSS file)
+                - theme-blue-1.css - (colors Version)
+                ...
+                - custom.css -( if you want to add or edit, put them here.)
+        </pre>
+        <p>&nbsp;</p>
+	</section>
+
+	<section id="javascript">
+		<div class="page-header"><h3>Javascript</h3><hr class="notop"></div>
+		<p><strong>jQuery </strong>- is a Javascript library that greatly reduces the amount of code that you must write.<br>
+            For more information, please visit <a href="http://www.jquery.com/">http://www.jquery.com/</a></p>
+        <p>All the JavaScript libraries and files are included at the bottom of every HTML page like this:</p>
+        <pre class="brush: php">
+            <script src="assets/plugins/modernizr.custom.js"></script>
+        </pre>
+        <p>The initializations and parameters (sliders, effects, etc.) are contained in <strong>assets/js/theme.js</strong></p>
+        <p>&nbsp;</p>
+	</section>
+
+	<section id="change_color">
+		<div class="page-header"><h3>Colors</h3><hr class="notop"></div>
+			<p>We support different colors which are 4 blue, 3 green , 3 purple and more colors are coming.</p>
+            <p>To change colors, Open .html files and find <strong>theme.css</strong> then put following code after that. </p>
+             <pre class="brush: html"><link href="assets/css/theme-color-number.css" rel="stylesheet"></pre>
+            <h3>Example</h3>
+            <pre class="brush: html">
+                <link href="assets/css/theme.css" rel="stylesheet">
+                <link href="assets/css/theme-purple-3.css" rel="stylesheet"></pre>
+           <p> and find <strong>id="mainlogo"</strong> and change the logo to proper one.</p>
+                     <pre class="brush: html"><img id="mainlogo" class="img-responsive" src="assets/img/logo1x.png" alt="Logo" /></pre>
+             <h3>Example</h3>
+                 <pre class="brush: html"><img id="mainlogo" class="img-responsive" src="assets/img/logo1x-purple-3.png" alt="Logo" /></pre>
+            <p>Also have to change circle colors, find <strong>data-percentage-color</strong> and <strong> data-circle-color</strong>    and change colors to what you want. 
+              <h3>Example</h3>
+            <pre class="brush: html">
+                 <div class="circle" id="circle-1" data-icon="rchyoga-7-o" data-percentage="80" data-circle-color="#386091" data-percentage-color="#f1be03"></div>                            
+</pre>
+
+	</section>
+
+	<section id="fonts">
+		<div class="page-header"><h3>Your First Section Title</h3><hr class="notop"></div>
+        <p>To change the embedded font, please take a look in the head part of assets/css/theme.css:</p>
+        <pre class="brush: html">
+            @import url('http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900');
+        </pre>
+        <p>To change the font, first go to http://www.google.com/webfonts choose a font and add the generated code to the top of theme.css.</p>
+        <p>Then edit font-family in </p>
+        <pre class="brush: html">
+            body {
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                line-height: 1.33;
+            }
+        </pre>
+        </pre>
+        <p>&nbsp;</p>
+
+		<h3>Icons</h3>
+        <p><strong>Font Awesome</strong> is a @font-face iconset that you can change size and color of the icons usingCSS.</p>
+        <p>If you need more information, please visit this site: <a href="http://fortawesome.github.com/Font-Awesome/">http://fortawesome.github.com/Font-Awesome/</a></p>
+        <p>&nbsp;</p>
+        <h4>HTML Markup:</h4>
+        <pre class="brush: html">
+        &lt;i class=&quot;fa-edit&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa-search&quot;&gt;&lt;/i&gt;
+        ...
+        </pre>
+        <p>&nbsp;</p>
+	</section>
+
+	<section id="fonts_Yoga">
+		<div class="page-header"><h3>Yoga Font Icons</h3><hr class="notop"></div>
+			<p>This font has been created by RCHTHEME team and it is free to use.</p>
+			<h3>HTML Markup:</h3>
+			<pre class="brush: html"><i class="fa rchyoga-1"></i>
+<i class="fa rchyoga-2"></i>
+<i class="fa rchyoga-3"></i>
+<i class="fa rchyoga-4"></i>
+<i class="fa rchyoga-5"></i>
+<i class="fa rchyoga-6"></i>
+<i class="fa rchyoga-7"></i>
+<i class="fa rchyoga-8"></i>
+<i class="fa rchyoga-1-o"></i>
+<i class="fa rchyoga-2-o"></i>
+<i class="fa rchyoga-3-o"></i>
+<i class="fa rchyoga-4-o"></i>
+<i class="fa rchyoga-5-o"></i>
+<i class="fa rchyoga-6-o"></i>
+<i class="fa rchyoga-7-o"></i>
+<i class="fa rchyoga-8-o"></i>
+			</pre>
+			<h1 style="font-size:50px;">
+			<i class="fa rchyoga-2"></i>
+			<i class="fa rchyoga-1"></i>
+			<i class="fa rchyoga-3"></i>
+			<i class="fa rchyoga-4"></i>
+			<i class="fa rchyoga-5"></i>
+			<i class="fa rchyoga-6"></i>
+			<i class="fa rchyoga-7"></i>
+			<i class="fa rchyoga-8"></i><br/>
+			<i class="fa rchyoga-1-o"></i>
+			<i class="fa rchyoga-2-o"></i>
+			<i class="fa rchyoga-3-o"></i>
+			<i class="fa rchyoga-4-o"></i>
+			<i class="fa rchyoga-5-o"></i>
+			<i class="fa rchyoga-6-o"></i>
+			<i class="fa rchyoga-7-o"></i>
+			<i class="fa rchyoga-8-o"></i>
+			</h1>
+	</section>
+
+	<section id="widgets">
+		<div class="page-header"><h3>Widgets & Shortcodes</h3><hr class="notop"></div>
+		<h3>Lightbox</h3>
+        <p>The theme is driven by the <strong>PrettyPhoto </strong>script.<br>
+        <pre class="brush: html">
+        <a href="assets/img/gallery/1.jpg" data-gal="prettyPhoto[yoga]"><i class="fa fa-plus fa-3x"></i><span>zoom</span></a> </pre>
+            For more information check the <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation" target="_blank">documentation</a></p>
+        <p><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a></p>
+        <p>&nbsp;</p>
+		        <h3>Price Tables</h3>
+        <hr class="notop">
+        <p>Price tables main wrapper has '<code>price-tables</code>' class and 4 columns.You need understanding bootstrap 3 <a href="http://getbootstrap.com/css/#grid">grid system</a> http://getbootstrap.com/css/#grid</p>
+        <p><strong>Notes for price</strong></p>
+        <ul>
+            <li>to markup price with '<code>Best</code>' add class '<code>featured</code>' to price table wrapper '<code>&lt;div class="price-table featured"></code>'</li>
+            <li><code>&lt;h2 class="price-label-title"></code> - label for the price</li>
+            <li><code>&lt;span class="price-number"></code> - price amount</li>
+            <li><code>&lt;span class="price-unit"></code> - price currency</li>
+            <li><code>&lt;div class="price-table-row"></code> - wrapper for each feature of price</li>
+            <li><code>&lt;div class="price-table-row-bottom"></code> - register button should be here and Href must be #register</li>
+        </ul>
+        <h4>HTML Markup</h4>
+        <pre class="brush: html">
+                <div class="row price-tables">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="price-table" data-animation="fadeInUp" data-animation-delay="100">
+                            <div class="price-table-header">
+                                <div class="price-label">
+                                    <div class="price-label-title">1 class <span>per week</span></div>
+                                </div>
+                            </div>
+                            <div class="price-table-rows">
+                                <div class="price-table-row">1 Class Per week</div>
+                                <div class="price-table-row odd">Mat $12</div>                                
+                                <div class="price-table-row price-value">
+                                   <span class="price-unit">$</span><span class="price-number">100</span>
+                                </div>    
+                                <div class="price-table-row-bottom">
+                                    <a class="btn btn-theme btn-theme-rch scroll-to curl-bottom-left" href="#register">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="price-table featured" data-animation="fadeInUp" data-animation-delay="200">
+                            <div class="price-table-header">
+                                <div class="price-label">
+                                    <div class="price-label-title">One month <span>unlimited</span></div>
+                                </div>
+                            </div>
+                            <div class="price-table-rows">
+                                <div class="price-table-row">3 Class Per week</div>
+                                <div class="price-table-row odd">Free Mat</div>                                
+                                <div class="price-table-row price-value">
+                                   <span class="price-unit">$</span><span class="price-number">175</span>
+                                </div>    
+                                <div class="price-table-row-bottom">
+                                    <a class="btn btn-theme btn-theme-rch scroll-to" href="#register">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">...</div>
+                ...
+            </div>
+        </pre>
+        <p>&nbsp;</p>
+		<h3>Schedule</h3>
+        <p>Schedule tabs created with bootstrap tabs and you can find more documentation here <a href="http://getbootstrap.com/javascript/#tabs">http://getbootstrap.com/javascript/#tabs</a></p>
+        <p>Just some notes for easy understanding:</p>
+        <ul>
+            <li><code>&lt;div class="schedule-wrapper clear"></code> - wrap all schedule content</li>
+            <li><code>&lt;div class="schedule-tabs main"></code> - "main"  for days (Monday, Tuesday, ... ) and each tab has id 'tab-first', 'tab-second' ... </li>
+            <li><code>&lt;div class="tab-content main"></code> - display content for tabs of first level and each tab-pane has correct id 'tab-first', 'tab-second' as tab switcher </li>
+        </ul>
+        <h4>Schedule main html structure</h4>
+        <pre class="brush: html">
+            <div class="schedule-wrapper clear">
+                      <div class="schedule-tabs main">
+                        <ul id="tabs-main" class="nav nav-justified">
+                            <li class="active"><a href="#tab-first" data-toggle="tab">Monday</a></li>
+                            <li><a href="#tab-second" data-toggle="tab">Tuesday</a></li>
+                            <li><a href="#tab-third" data-toggle="tab">Wednsday</a></li>
+                            <li><a href="#tab-fourth" data-toggle="tab">Thursday</a></li>
+                            <li><a href="#tab-fifth" data-toggle="tab">Friday</a></li>
+                            <li><a href="#tab-sixth" data-toggle="tab">Saturday</a></li>
+                            <li><a href="#tab-last" data-toggle="tab">Sunday</a></li>
+                        </ul>
+                    </div>
+                <div class="tab-content main">
+                        <!-- tab1 -->
+                        <div id="tab-first" class="tab-pane fade in active">
+                            <div class="timeline">
+
+                                <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
+                                    <div class="row">
+                                        <!-- -->
+                                        <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+                                            <img src="assets/img/team/jane.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <!-- -->
+                                        <div class="media-body col-sm-12 col-md-10 col-lg-10">
+                                            <div class="pull-right"> <a data-toggle="modal" data-target="#booknow" href="#booknow" class="btn btn-theme btn-theme-rch curl-bottom-left">Book Now</a> </div>
+                                            <div class="post-meta">08:30 - 10:30</div>
+                                            <div class="post-title">Yoga for beginners </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <!-- -->
+                                    </div>
+                                </article>
+
+
+                                <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
+                                    <div class="row">
+                                        <!-- -->
+                                        <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+                                            <img src="assets/img/team/natasha.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <!-- -->
+                                        <div class="media-body col-sm-12 col-md-10 col-lg-10">
+                                            <div class="pull-right"> <a data-toggle="modal" data-target="#booknow" href="#booknow" class="btn btn-theme btn-theme-rch curl-bottom-left">Book Now</a> </div>
+                                            <div class="post-meta">10:30 - 12:30</div>
+                                            <h2 class="post-title">Yoga for adults </h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <!-- -->
+                                    </div>
+                                </article>
+
+
+                                <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
+                                    <div class="row">
+                                        <!-- -->
+                                        <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+                                            <img src="assets/img/team/sherry.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <!-- -->
+                                        <div class="media-body col-sm-12 col-md-10 col-lg-10">
+                                            <div class="pull-right"> <a data-toggle="modal" data-target="#booknow" href="#booknow" class="btn btn-theme btn-theme-rch curl-bottom-left">Book Now</a> </div>
+                                            <div class="post-meta">14:00 - 16:00</div>
+                                            <h2 class="post-title">Yoga for kids </h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <!-- -->
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    <!-- tab2 -->
+                    <div id="tab-second" class="tab-pane fade"> ... </div>
+                    <!-- tab3 -->
+                    <div id="tab-third" class="tab-pane fade"> ... </div>
+                    <!-- tab4 -->
+                    <div id="tab-last" class="tab-pane fade"> ... </div>
+                </div>
+            </div>
+        </pre>
+        <p>&nbsp;</p>
+
+
+        <h4>Gallery html structure</h4>
+        <pre class="brush: html">
+       <!-- Gallery -->
+        <section class="page-section color no-padding">
+                <div id="gallery">
+                    <figure class="gallery effect-rch curl-bottom-left">
+                    <div class="overlay"></div>
+                    <img src="assets/img/gallery/1.jpg"/>
+                    <figcaption>
+                        <a href="assets/img/gallery/1.jpg" data-gal="prettyPhoto[yoga]"><i class="fa fa-plus fa-3x"></i><span>zoom</span></a>
+                    </figcaption>
+                    </figure>
+                    <figure class="gallery effect-rch curl-bottom-left">
+                    <div class="overlay"></div>
+                    <img src="assets/img/gallery/2.jpg"/>
+                    <figcaption>
+                        <a href="assets/img/gallery/2.jpg" data-gal="prettyPhoto[yoga]"><i class="fa fa-plus fa-3x"></i><span>zoom</span></a>
+                    </figcaption>
+                    </figure>
+             		...                                       
+                </div>    
+        </section>
+        <!-- /Gallery --> 
+        </pre>
+        <p>&nbsp;</p>
+
+	</section>
+
+	<section id="php_scripts">
+		<div class="page-header"><h3>PHP Scripts</h3><hr class="notop"></div>
+        <h4>Registration & Contact Forms</h4>
+        <p>For Registration & Contact Form to work only thing you need to do is to setup your email address and your name.<br>
+            To do this, please open<strong> &quot;register.php & contact.php&quot; </strong> file and change these lines:</p>
+        <pre class="brush: php">
+        $to      = 'you@yourdomain.com';
+        $subject = 'Your Subject';</pre> 
+        <p class="warning">One notice: this will be functional only on your server, php files can not be executed on your local computer.</p>
+        <p>&nbsp;</p>
+	</section>			
+
+	<section id="social_icons">
+		<div class="page-header"><h3>Social Media & Brand Icons</h3><hr class="notop"></div>
+        <p> We are using FontAwesome for social media icons in this template. Insert icons like this:</p>
+        <pre class="brush: html"><i class="fa fa-google-plus"></i ></pre>
+        <p>Here's the complete list of available icons from FontAwesome docs:</p>
+        <p><img src="assets/img/icons-social.gif" alt="FontAwesome social icons"></p>
+        <p>&nbsp;</p>
+	</section>
+
+	<section id="change_log">
+		<div class="page-header"><h3>Change Log</h3><hr class="notop"></div>
+			<h4>Version : 1</h4>
+			<pre>initial theme.</pre>
+	</section>
+
+	<section id="source_Credits">
+		<div class="page-header"><h3>Source & Credits</h3><hr class="notop"></div>
+        <p>&nbsp;</p>
+        <p>Fonts:<br>
+            <strong>Google Fonts</strong> - <a href="http://www.google.com/webfonts">http://www.google.com/webfonts</a><br>
+            <strong>Icons Font-face</strong> - <a href="http://fortawesome.github.com/Font-Awesome/">http://fortawesome.github.com/Font-Awesome/</a><br>
+        </p>
+        <p>Scripts:<br>
+            <strong>jQuery</strong> - <a href="http://www.jquery.com/">http://www.jquery.com/</a><br>
+            <strong>Modernizr </strong>- <a href="http://modernizr.com/">http://modernizr.com/</a><br>
+            <strong>Bootstrap Framework</strong> - <a href="http://getbootstrap.com/">http://getbootstrap.com/</a><br>
+            <strong>Bootstrap-select</strong> - <a href="http://silviomoreto.github.io/bootstrap-select/">http://silviomoreto.github.io/bootstrap-select/</a><br>
+            <strong>Font Awesome</strong> - <a href="http://fontawesome.io/">http://fontawesome.io/</a><br>
+            <strong>Owl Carousel 2</strong> - <a href="http://www.owlcarousel.owlgraphic.com/">http://www.owlcarousel.owlgraphic.com/</a><br>
+            <strong>Superfish Menu</strong> - <a href="http://plugins.jquery.com/superfish/">http://plugins.jquery.com/superfish/</a><br>
+            <strong>HTML5shiv</strong> - <a href="http://code.google.com/p/html5shiv/">http://code.google.com/p/html5shiv/</a><br>
+            <strong>Respond.js</strong> - <a href="https://github.com/scottjehl/Respond">https://github.com/scottjehl/Respond</a><br>
+            <strong>PrettyPhoto</strong>- <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a><br>
+            <strong>jQuery Easing</strong> - <a href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a><br>
+            <strong>Smooth anchor scrolling plugin for jQuery</strong> - <a href="http://mths.be/smoothscroll">http://mths.be/smoothscroll</a><br>
+            <strong>Placeholder Caret Animation</strong> - <a href="http://placeholdem.jackrugile.com">http://placeholdem.jackrugile.com</a><br>
+            <strong>jQuery Waypoints</strong> - <a href="http://imakewebthings.com/jquery-waypoints/">http://imakewebthings.com/jquery-waypoints/</a><br>
+            <strong>circles</strong> - <a href="https://github.com/lugolabs/circles">https://github.com/lugolabs/circles</a><br>
+            <strong>Animate.css</strong> - <a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a><br>
+	        <strong>MediaElement</strong> - <a href="http://mediaelementjs.com/">http://mediaelementjs.com/</a><br>
+        </p>
+        <p class="info">The images included in preview are for demonstration purposes and should always be replaced with your own work.</p>
+        <p>&nbsp;</p>
+        <p>Images:<br>
+        <pre class="brush: html">
+http://photodune.net/item/gym-woman-with-a-yoga-mat/4034068?WT.oss_phrase=yoga%20mat&WT.oss_rank=33&WT.z_author=andresrphotos&WT.ac=search_thumb
+http://photodune.net/item/yoga/7460671?WT.oss_phrase=yoga&WT.oss_rank=415&WT.z_author=LuckyImages&WT.ac=search_thumb
+http://photodune.net/item/yoga/7460590?WT.oss_phrase=yoga&WT.oss_rank=155&WT.z_author=LuckyImages&WT.ac=search_thumb
+http://photodune.net/item/man-doing-yoga/5200491?WT.oss_phrase=yoga%20man&WT.oss_rank=72&WT.z_author=andresrphotos&WT.ac=search_thumb
+http://photodune.net/item/yoga/3483912?WT.oss_phrase=yoga&WT.oss_rank=9&WT.z_author=ayakovlev&WT.ac=search_thumb
+http://photodune.net/item/yoga/3483914?WT.oss_phrase=yoga&WT.oss_rank=31&WT.z_author=ayakovlev&WT.ac=search_thumb
+http://photodune.net/item/yoga/2309907?WT.oss_phrase=yoga&WT.oss_rank=73&WT.z_author=Piotr_Marcinski&WT.ac=search_thumb
+http://photodune.net/item/yoga/1921200?WT.oss_phrase=yoga&WT.oss_rank=3&WT.z_author=yellowj&WT.ac=search_thumb
+http://photodune.net/item/beach-yoga/4681278?WT.oss_phrase=yoga%20beach&WT.oss_rank=63&WT.z_author=EpicStockMedia&WT.ac=search_thumb
+http://photodune.net/item/group-of-yoga-people/5142115?WT.oss_phrase=yoga%20group&WT.oss_rank=4&WT.z_author=andresrphotos&WT.ac=search_thumb
+http://photodune.net/item/yoga-mats-and-yoga-cushion/1370082?WT.oss_phrase=yoga&WT.oss_rank=226&WT.z_author=cmfotoworks&WT.ac=search_thumb
+http://photodune.net/item/yoga/8503918?WT.oss_phrase=yoga&WT.oss_rank=265&WT.z_author=LuckyImages&WT.ac=search_thumb
+http://photodune.net/item/woman-with-yoga-mat/3054522?WT.oss_phrase=yoga%20mat&WT.oss_rank=26&WT.z_author=andresrphotos&WT.ac=search_thumb
+http://photodune.net/item/woman-bent-over-backwards-in-a-yoga-position-in-a-yoga-studio-side-view/8802090?WT.oss_phrase=yoga%20group&WT.oss_rank=152&WT.z_author=XiXinXing&WT.ac=search_thumb
+http://photodune.net/item/yoga/7460468?WT.oss_phrase=yoga%20group&WT.oss_rank=166&WT.z_author=LuckyImages&WT.ac=search_thumb
+http://photodune.net/item/yoga-class-in-childs-pose-in-fitness-studio-at-the-leisure-center/8674709?WT.oss_phrase=yoga%20studio&WT.oss_rank=44&WT.z_author=Wavebreakmedia&WT.ac=search_thumb
+http://photodune.net/item/women-at-yoga-class-in-boat-pose-in-fitness-studio/8425106?WT.oss_phrase=yoga%20studio&WT.oss_rank=70&WT.z_author=Wavebreakmedia&WT.ac=search_thumb
+http://photodune.net/item/yoga-class-in-fitness-studio-at-the-leisure-center/8670377?WT.oss_phrase=yoga%20studio&WT.oss_rank=76&WT.z_author=Wavebreakmedia&WT.ac=search_thumb
+http://photodune.net/item/smiling-pregnant-women-in-yoga-class-in-tree-pose-in-a-fitness-studio/8573460?WT.oss_phrase=yoga%20studio&WT.oss_rank=104&WT.z_author=Wavebreakmedia&WT.ac=search_thumb
+http://photodune.net/item/couple-practicing-yoga/6858406?WT.oss_phrase=Practicing%20yoga&WT.oss_rank=411&WT.z_author=Pressmaster&WT.ac=search_thumb
+http://photodune.net/item/people-at-the-gym/432030?WT.oss_phrase=yoga%20group&WT.oss_rank=58&WT.z_author=andresrphotos&WT.ac=search_thumb
+		</pre>
+        </p>
+        <h4><strong>RCHTHEME</strong></h4>
+        <p>&nbsp;</p>
+        </section>
+	</div>
+</body>
+</html>
